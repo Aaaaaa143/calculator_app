@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>BMI</h1>
+    <div class="container">
+        
+        <form action="" method="post">
+            {%csrf_token%}
+            <div>
+                <label for="">enter weight in kg</label>
+                <input type="text" name="weight" placeholder="enter weight">
+            </div>
+            <div>
+                <label for="">enter heught in cm</label>
+                <input type="text" name="height" placeholder="enter height">
+            </div>
+            <div>
+                <button type="submit">enter</button>
+            </div>
+        </form>
+        {{output}}
+    </div>
+</body>
+</html>
